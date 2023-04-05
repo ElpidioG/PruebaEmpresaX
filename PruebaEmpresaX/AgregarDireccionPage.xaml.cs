@@ -44,8 +44,8 @@ namespace PruebaEmpresaX
                 {
                     using (SqlCommand command = connection.CreateCommand())
                     {
-                        // Build the query
-                        command.CommandText = "INSERT INTO Direcciones (Calle, Numero, Ciudad, Estado, Pais, IdCliente) VALUES (@Calle, @Numero, @Ciudad, @Estado, @Pais, @IdCliente);";
+                        // Agregar valores a la tabla
+                        command.CommandText = "INSERT INTO Direccion (Calle, Numero, Ciudad, Estado, Pais, IdCliente) VALUES (@Calle, @Numero, @Ciudad, @Estado, @Pais, @IdCliente);";
                         command.Parameters.AddWithValue("@Calle", calleEntry.Text);
                         command.Parameters.AddWithValue("@Numero", numeroEntry.Text);
                         command.Parameters.AddWithValue("@Ciudad", ciudadEntry.Text);
@@ -53,10 +53,10 @@ namespace PruebaEmpresaX
                         command.Parameters.AddWithValue("@Pais", paisEntry.Text);
                         command.Parameters.AddWithValue("@IdCliente", idClienteEntry.Text);
 
-                        // Execute the query
+                        // Ejecutar el query
                         command.ExecuteNonQuery();
 
-                        // Show success message and go back to previous page
+                        // Mensaje en pantalla
                         DisplayAlert("Éxito", "Dirección agregada correctamente", "OK");
                         Navigation.PopAsync();
                     }
@@ -64,13 +64,11 @@ namespace PruebaEmpresaX
             }
             catch (Exception ex)
             {
+            // Mensaje de error
                 DisplayAlert("Error", $"No se pudo agregar la dirección: {ex.Message}", "OK");
             }
         }
 
-        private void AddAddress_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
