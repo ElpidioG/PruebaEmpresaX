@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaEmpresaX.EditarDireccionPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Editar Dirección" FontSize="Large" Margin="10" />
+
+            <Entry x:Name="idEntry" Placeholder="Id" IsEnabled="False" />
+            <Entry x:Name="calleEntry" Placeholder="Calle" />
+            <Entry x:Name="numeroEntry" Placeholder="Número" />
+            <Entry x:Name="ciudadEntry" Placeholder="Ciudad" />
+            <Entry x:Name="estadoEntry" Placeholder="Estado" />
+            <Entry x:Name="paisEntry" Placeholder="País" />
+            <Entry x:Name="idClienteEntry" Placeholder="Id Cliente" IsEnabled="False" />
+
+            <Button x:Name="Guardar" Text="Guardar" Clicked="UpdateButton_Clicked" Margin="10" />
+            <Button x:Name="BorrarButton" Text="Borrar" Clicked="BorrarButton_Clicked" Margin="10" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

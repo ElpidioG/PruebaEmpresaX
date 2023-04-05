@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaEmpresaX.MainPage">
+
+    <StackLayout>
+        <ListView x:Name="clientListView" ItemSelected="clientListView_ItemSelected"  />
+        <CollectionView x:Name="addressCollectionView"/>
+        <Button x:Name="addClientButton" Text="Agregar Cliente" Clicked="addClientButton_Clicked"/>
+        <Button x:Name="addAddressButton" Text="Agregar Dirección" Clicked="addAddressButton_Clicked"/>
+        <Button x:Name="EditClientButton" Text="Edit" Clicked="EditClientButton_Clicked" />
+        <Button x:Name="EditAddressButton" Text="Edit" Clicked="EditAddressButton_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
