@@ -29,7 +29,7 @@ namespace PruebaEmpresaX
                 DisplayAlert("Error", "Debe completar todos los campos", "OK");
                 return;
             }
-            string connectionString = "Data Source=DESKTOP-710LBMG;Initial Catalog=EmpresaX;Integrated Security=True";
+             string connectionString = "Server=DESKTOP-710LBMG\\SQLEXPRESS;Database=EmpresaX;Integrated Security=True";
 
             SqlConnection connection = new SqlConnection(connectionString);
             using (connection)
@@ -81,10 +81,7 @@ namespace PruebaEmpresaX
             }
         }
 
-        private void Guardar_Clicked(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
 
