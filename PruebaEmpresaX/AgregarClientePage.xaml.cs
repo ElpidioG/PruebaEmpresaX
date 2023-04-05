@@ -28,7 +28,7 @@ namespace PruebaEmpresaX
         public Cliente Lista { get; }
         private void AgregarButton_Clicked(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-710LBMG;Initial Catalog=EmpresaX;Integrated Security=True";
+             string connectionString = "Server=DESKTOP-710LBMG\\SQLEXPRESS;Database=EmpresaX;Integrated Security=True";
 
             SqlConnection connection = new SqlConnection(connectionString);
             using (connection)
