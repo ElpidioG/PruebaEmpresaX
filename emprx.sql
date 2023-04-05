@@ -11,9 +11,10 @@ CREATE TABLE Cliente (
 CREATE TABLE Direccion (
     Id INT PRIMARY KEY,
     Calle VARCHAR(50),
+    Numero VARCHAR(50),
     Ciudad VARCHAR(50),
     Estado VARCHAR(50),
     Pais VARCHAR(50),
-    ClienteId INT,
-    FOREIGN KEY (ClienteId) REFERENCES Cliente(Id)
+    idCliente INT,
+    FOREIGN KEY (idCliente) REFERENCES Cliente(Id)
 );
