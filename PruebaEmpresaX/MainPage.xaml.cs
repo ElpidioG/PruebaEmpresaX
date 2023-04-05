@@ -144,30 +144,6 @@ namespace PruebaEmpresaX
 
         }
 
-        private void clientListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-
-        }
-
-
-        private void addAddressButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EditClientButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EditAddressButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addClientButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
