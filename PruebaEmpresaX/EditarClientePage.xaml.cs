@@ -28,7 +28,7 @@ namespace PruebaEmpresaX
 
         private void GuardarCambios_Clicked_1(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-710LBMG;Initial Catalog=EmpresaX;Integrated Security=True";
+             string connectionString = "Server=DESKTOP-710LBMG\\SQLEXPRESS;Database=EmpresaX;Integrated Security=True";
 
             SqlConnection connection = new SqlConnection(connectionString);
             using (connection)
